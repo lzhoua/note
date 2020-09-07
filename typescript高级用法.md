@@ -1,0 +1,1 @@
+[typescript高级用法](https://zhuanlan.zhihu.com/p/136254808)

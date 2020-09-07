@@ -1,0 +1,285 @@
+{
+  "rootTopicKey": "bf15ae65-1531-4d81-8f82-e97eb478b877",
+  "editorRootTopicKey": "bf15ae65-1531-4d81-8f82-e97eb478b877",
+  "focusKey": "e93194a6-1fdc-4793-965f-10dd88ab90d0",
+  "extData": {
+    "TOPIC_REFERENCE": {
+      "reference": {}
+    }
+  },
+  "topics": [
+    {
+      "key": "e93194a6-1fdc-4793-965f-10dd88ab90d0",
+      "parentKey": "58dbac66-2407-434f-b866-2572b823edb2",
+      "subKeys": [
+        "aa191e0f-ffa4-4e37-b681-26d2d393280d",
+        "72d27511-7584-463b-9009-5805079f6715",
+        "57543b2e-1ca6-4140-8d01-bfa793858f24"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "链表"
+        },
+        {
+          "type": "DESC",
+          "data": "因为线性表的特殊结构，适合频繁插入和删除的场景\n\n```\n// Node { val: 1, next: Node { val: 2, next: Node { val: 3, next: null } } }\nclass List {\n  constructor () {\n    this.length = 0\n    this.head = null\n  }\n﻿\n  initNode (val, next) {\n    return {\n      val: val,\n      next: next || null\n    }\n  }\n﻿\n  add (val) {\n    // 如果是空链表\n    if (this.head === null) {\n      this.head = this.initNode(val)\n      this.length = this.length + 1\n      return\n    }\n    let current = this.head\n    // 根据链表一层层找到最后的节点\n    while(current.next) {\n      current = current.next\n    }\n    current.next = this.initNode(val)\n    this.length = this.length + 1\n  }\n﻿\n  insert (index, val) {\n    if (index < -1 || index > this.length) {\n      console.warn(`{index: ${index}, val: ${val}}, 插入失败，请输入正确的插入节点`)\n      return false\n    }\n    const current = this.findIndex(index)\n    const node = this.initNode(val, current.next)\n    current.next = node\n    this.length = this.length + 1\n  }\n﻿\n  delete (index) {\n    if (index < -1 || index > this.length) {\n      console.warn(`index: ${index}, 不在链表中`)\n      return false\n    }\n    if (index === 1) {\n      if (this.length === 1) {\n        this.head = {}\n        return this.head\n      }\n      this.head = this.head.next\n      this.length = this.length -1\n      return this.head\n    }\n    let current = this.findIndex(index - 1)\n    current.next = current.next && current.next.next || null\n    this.length = this.length - 1\n    return this.head\n  }\n﻿\n  remove () {\n﻿\n  }\n﻿\n  findIndex (index) {\n    if (index < -1 || index > this.length) {\n      console.warn(`index: ${index}, 不在链表中`)\n      return false\n    }\n    let current = this.head\n    for (let i = 1; i <= this.length; i++) {\n      if (i === index) {\n        return current\n      }\n      current = current.next\n    }\n  }\n﻿\n  toString () {\n    if (!this.head) {\n      console.warn('该链表是一个空链表')\n      return ''\n    }\n    let current = this.head.next\n    let result = this.head.val || ''\n    while (current) {\n      result = result + ',' + current.val\n      current = current.next\n    }\n    return result\n  }\n﻿\n  getLength () {\n    return this.length\n  }\n  getHead () {\n    return JSON.stringify(this.head)\n  }\n}\n﻿\nconst a = new List()\na.add(1)\na.add(2)\na.add(3)\na.insert(2, 5)\nconsole.log('------>', a.findIndex(3)) // { val: 5, next: { val: 3, next: null } }\nconsole.log('------>', a.getHead()) // {\"val\":1,\"next\":{\"val\":2,\"next\":{\"val\":5,\"next\":{\"val\":3,\"next\":null}}}}\nconsole.log('------>', a.getLength()) // 4\nconsole.log('------>', a.toString()) // 1,2,5,3\na.delete(2)\nconsole.log('---1--->', a.toString()) // 1,5,3\na.delete(2)\nconsole.log('---2--->', a.toString()) // 1,3\na.delete(2)\nconsole.log('--3---->', a.toString()) // 1\na.delete(1)\nconsole.log('---4--->', a.toString()) // ''\n\n```\n"
+        }
+      ]
+    },
+    {
+      "key": "dbef20e1-eb01-49a2-9fce-5bf7e51d6a68",
+      "parentKey": "aa191e0f-ffa4-4e37-b681-26d2d393280d",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "120d1bec-d4c7-4584-91aa-10deafb1920e",
+      "parentKey": "58dbac66-2407-434f-b866-2572b823edb2",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "图"
+        }
+      ]
+    },
+    {
+      "key": "57543b2e-1ca6-4140-8d01-bfa793858f24",
+      "parentKey": "e93194a6-1fdc-4793-965f-10dd88ab90d0",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "双向链表"
+        }
+      ]
+    },
+    {
+      "key": "a9cea949-12c3-4213-8145-6b579b41ab5a",
+      "parentKey": "17570159-1f94-4bde-b5bd-5e2734f1ef59",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "栈"
+        },
+        {
+          "type": "DESC",
+          "data": "限定仅在表尾进行插入或者删除操作的线性表\n表尾： 栈顶\n表头： 栈底"
+        }
+      ]
+    },
+    {
+      "key": "25805987-09d0-4cba-b038-12c0fc5f6a13",
+      "parentKey": "58dbac66-2407-434f-b866-2572b823edb2",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "树和二叉树"
+        }
+      ]
+    },
+    {
+      "key": "07bdfa51-e0ec-45be-8463-10e711df4102",
+      "parentKey": "17570159-1f94-4bde-b5bd-5e2734f1ef59",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "队列"
+        }
+      ]
+    },
+    {
+      "key": "bf15ae65-1531-4d81-8f82-e97eb478b877",
+      "parentKey": null,
+      "subKeys": [
+        "58dbac66-2407-434f-b866-2572b823edb2",
+        "1974d2bb-00f3-4456-b7f7-e9e89b978ebe"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "数据结构和算法"
+        }
+      ]
+    },
+    {
+      "key": "1b96e35d-2be6-4170-bc50-cca92d22405b",
+      "parentKey": "58dbac66-2407-434f-b866-2572b823edb2",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "数组和广义表"
+        }
+      ]
+    },
+    {
+      "key": "58dbac66-2407-434f-b866-2572b823edb2",
+      "parentKey": "bf15ae65-1531-4d81-8f82-e97eb478b877",
+      "subKeys": [
+        "e93194a6-1fdc-4793-965f-10dd88ab90d0",
+        "17570159-1f94-4bde-b5bd-5e2734f1ef59",
+        "962fd453-5ad1-4676-ba3d-3cd420c4198d",
+        "1b96e35d-2be6-4170-bc50-cca92d22405b",
+        "25805987-09d0-4cba-b038-12c0fc5f6a13",
+        "120d1bec-d4c7-4584-91aa-10deafb1920e"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "数据结构"
+        }
+      ]
+    },
+    {
+      "key": "962fd453-5ad1-4676-ba3d-3cd420c4198d",
+      "parentKey": "58dbac66-2407-434f-b866-2572b823edb2",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "串"
+        }
+      ]
+    },
+    {
+      "key": "aa191e0f-ffa4-4e37-b681-26d2d393280d",
+      "parentKey": "e93194a6-1fdc-4793-965f-10dd88ab90d0",
+      "subKeys": [
+        "dbef20e1-eb01-49a2-9fce-5bf7e51d6a68"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "线性链表"
+        },
+        {
+          "type": "DESC",
+          "data": "———————           ———————          ———————\nP —\\>  \\| pre \\| a1 \\| next \\| —\\>  \\| pre \\| a2 \\| next \\| —\\> \\| pre \\| a3 \\| next \\| —\\> null\n            ———————           ———————          ———————\n\n```\nNode { val: a1, next: Node { val: a2, next: Node { val: a3, next: null } } }\n\n```\n"
+        }
+      ]
+    },
+    {
+      "key": "17570159-1f94-4bde-b5bd-5e2734f1ef59",
+      "parentKey": "58dbac66-2407-434f-b866-2572b823edb2",
+      "subKeys": [
+        "a9cea949-12c3-4213-8145-6b579b41ab5a",
+        "07bdfa51-e0ec-45be-8463-10e711df4102"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "栈和队列"
+        }
+      ]
+    },
+    {
+      "key": "1974d2bb-00f3-4456-b7f7-e9e89b978ebe",
+      "parentKey": "bf15ae65-1531-4d81-8f82-e97eb478b877",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "算法"
+        }
+      ]
+    },
+    {
+      "key": "72d27511-7584-463b-9009-5805079f6715",
+      "parentKey": "e93194a6-1fdc-4793-965f-10dd88ab90d0",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "循环链表"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "readOnly": false,
+    "allowUndo": true,
+    "layoutDir": 0,
+    "theme": {
+      "name": "default",
+      "randomColor": true,
+      "background": "rgb(57,60,65)",
+      "highlightColor": "#50C9CE",
+      "marginH": 60,
+      "marginV": 20,
+      "contentStyle": {
+        "lineHeight": "1.5",
+        "fontSize": "16px"
+      },
+      "linkStyle": {
+        "lineRadius": 5,
+        "lineType": "curve",
+        "lineWidth": "3px"
+      },
+      "rootTopic": {
+        "contentStyle": {
+          "fontSize": "36px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px"
+        }
+      },
+      "primaryTopic": {
+        "contentStyle": {
+          "fontSize": "24px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px"
+        }
+      },
+      "normalTopic": {
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px"
+        }
+      }
+    }
+  },
+  "formatVersion": "0.0"
+}
