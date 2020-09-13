@@ -1,0 +1,225 @@
+{
+  "rootTopicKey": "fcf7f9d5-d12b-4400-9713-4ae75d3534c7",
+  "editorRootTopicKey": "fcf7f9d5-d12b-4400-9713-4ae75d3534c7",
+  "focusKey": "79b53601-e668-4df2-8262-7744311053cf",
+  "extData": {},
+  "topics": [
+    {
+      "key": "30114945-90e3-45ea-b3ca-df529afecc7f",
+      "parentKey": "1bd1dc21-339e-4fe1-b881-9382365de8dd",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "设计模式"
+        }
+      ]
+    },
+    {
+      "key": "850b8465-f744-45d7-b94e-bfc78d1722c8",
+      "parentKey": "3d7c7e85-68c7-49cc-b765-9be6f126de7a",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "js堆栈内存的运行机制"
+        }
+      ]
+    },
+    {
+      "key": "419f901f-76ec-4ceb-9bae-74e4068ec565",
+      "parentKey": "3d7c7e85-68c7-49cc-b765-9be6f126de7a",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "变量提升"
+        }
+      ]
+    },
+    {
+      "key": "8212eb6c-e2fa-4d5f-a2e4-cbf18d1fc53a",
+      "parentKey": "3d7c7e85-68c7-49cc-b765-9be6f126de7a",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "作用域和作用域链"
+        }
+      ]
+    },
+    {
+      "key": "79b53601-e668-4df2-8262-7744311053cf",
+      "parentKey": "3d7c7e85-68c7-49cc-b765-9be6f126de7a",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "js中的8种数据类型及区别"
+        }
+      ]
+    },
+    {
+      "key": "dfecdfce-15b1-4792-bec6-671af5e72ee3",
+      "parentKey": "1bd1dc21-339e-4fe1-b881-9382365de8dd",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "类和实例"
+        }
+      ]
+    },
+    {
+      "key": "282b9502-775b-4ac5-8970-9d62251e0d5f",
+      "parentKey": "1bd1dc21-339e-4fe1-b881-9382365de8dd",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "原型和原型链"
+        }
+      ]
+    },
+    {
+      "key": "3d7c7e85-68c7-49cc-b765-9be6f126de7a",
+      "parentKey": "fcf7f9d5-d12b-4400-9713-4ae75d3534c7",
+      "subKeys": [
+        "79b53601-e668-4df2-8262-7744311053cf",
+        "850b8465-f744-45d7-b94e-bfc78d1722c8",
+        "419f901f-76ec-4ceb-9bae-74e4068ec565",
+        "8212eb6c-e2fa-4d5f-a2e4-cbf18d1fc53a",
+        "30481495-9207-4fe6-914b-c54fabcc4f18",
+        "da5076fb-34d4-4c46-9736-d2386f7c09d3"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "第一阶段"
+        }
+      ]
+    },
+    {
+      "key": "1bd1dc21-339e-4fe1-b881-9382365de8dd",
+      "parentKey": "fcf7f9d5-d12b-4400-9713-4ae75d3534c7",
+      "subKeys": [
+        "30114945-90e3-45ea-b3ca-df529afecc7f",
+        "dfecdfce-15b1-4792-bec6-671af5e72ee3",
+        "282b9502-775b-4ac5-8970-9d62251e0d5f"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "oop"
+        }
+      ]
+    },
+    {
+      "key": "da5076fb-34d4-4c46-9736-d2386f7c09d3",
+      "parentKey": "3d7c7e85-68c7-49cc-b765-9be6f126de7a",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "js高阶：惰性函数、柯里化、高阶函数"
+        }
+      ]
+    },
+    {
+      "key": "fcf7f9d5-d12b-4400-9713-4ae75d3534c7",
+      "parentKey": null,
+      "subKeys": [
+        "3d7c7e85-68c7-49cc-b765-9be6f126de7a",
+        "1bd1dc21-339e-4fe1-b881-9382365de8dd"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "js基础"
+        }
+      ]
+    },
+    {
+      "key": "30481495-9207-4fe6-914b-c54fabcc4f18",
+      "parentKey": "3d7c7e85-68c7-49cc-b765-9be6f126de7a",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "闭包"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "readOnly": false,
+    "allowUndo": true,
+    "layoutDir": 0,
+    "theme": {
+      "name": "default",
+      "randomColor": true,
+      "background": "rgb(57,60,65)",
+      "highlightColor": "#50C9CE",
+      "marginH": 60,
+      "marginV": 20,
+      "contentStyle": {
+        "lineHeight": "1.5",
+        "fontSize": "16px"
+      },
+      "linkStyle": {
+        "lineRadius": 5,
+        "lineType": "curve",
+        "lineWidth": "3px"
+      },
+      "rootTopic": {
+        "contentStyle": {
+          "fontSize": "36px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px"
+        }
+      },
+      "primaryTopic": {
+        "contentStyle": {
+          "fontSize": "24px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px"
+        }
+      },
+      "normalTopic": {
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px"
+        }
+      }
+    }
+  },
+  "formatVersion": "0.0"
+}

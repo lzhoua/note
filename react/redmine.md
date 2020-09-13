@@ -3,10 +3,7 @@
 
 
 
-##### setState是同步的还是异步的？
-
-
-
+setState是同步的还是异步的？
 为什么有时连续多次 setState只有一次生效？
 React如何实现自己的事件机制？
 为何 React事件要自己绑定 this？
