@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+
+var obj = {
+  name: 'obj'
+}
+var name = 'global'
+
+function say (name) {
+  console.log('------>', this.name)
+  console.log('----name-->', this)
+}
+
+
+// Function.prototype.newCall = function (...arg) {
+//   console.log('------>', typeof this)
+//   const target = arg[0]
+//   let _this = this
+//   target.fn = _this
+//   target.fn(...arg.slice(1))
+//   delete target.fn
+// }
+
+say.call()
+
+
+</script>
+</body>
+</html>
