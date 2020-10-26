@@ -1,14 +1,12 @@
-function twoSum (nums, target) {
-  let map = {}
-  for (let i = 0; i < nums.length; i++) {
-    map[nums[i]] = i
-  }
-  for (let i = 0; i < nums.length; i++) {
-    let cur = map[target - nums[i]]
-    if (cur && cur !== i) {
-      return [i, map[target - nums[i]]]
-    }
-  }
-}
+const mapDate = new Map()
 
-console.log('------>', twoSum([2, 7, 11, 15], 9))
+const a = {name: 34242}
+mapDate.set(a, '132131')
+mapDate.set('age', 18)
+const b = a
+
+console.log('------>', mapDate)
+
+console.log('------>', mapDate.get(a) === mapDate.get(b))
+console.log('------>', mapDate.keys())
+console.log('------>', [...mapDate])

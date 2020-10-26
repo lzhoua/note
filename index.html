@@ -8,29 +8,29 @@
 <body>
 <script>
 
-var obj = {
-  name: 'obj'
-}
-var name = 'global'
-
-function say (name) {
-  console.log('------>', this.name)
-  console.log('----name-->', this)
+function Page (obj) {
+  return obj
 }
 
+Page = function () {
+  const target = arguments[0]
+  const current = new Proxy(target, {
+    get (target, key) {
+      console.log('------>', 12312312312312312)
+      return target[key]
+    }
+  })
+  return target
+}
 
-// Function.prototype.newCall = function (...arg) {
-//   console.log('------>', typeof this)
-//   const target = arg[0]
-//   let _this = this
-//   target.fn = _this
-//   target.fn(...arg.slice(1))
-//   delete target.fn
-// }
-
-say.call()
-
-
+const a = Page({
+  say () {
+    console.log('------>', 111111)
+  }
+})
+setTimeout(() => {
+  a.say()
+}, 3000);
 </script>
 </body>
 </html>

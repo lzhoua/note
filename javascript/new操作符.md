@@ -62,3 +62,15 @@ console.log(bar)  // {name: 'sanye'}
 
 ```
 
+#### 实现new操作符
+
+```javascript
+function newFun (...arg) {
+  const constructorFun = arg[0]
+  let obj = new Object()
+  obj.__proto__ = constructorFun.prototype
+  const result = constructorFun.apply(obj, arg.slice(1))
+  return result instanceof Object ? result : obj
+}
+```
+
