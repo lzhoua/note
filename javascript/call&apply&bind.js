@@ -13,7 +13,7 @@ Function.prototype.newCall = function (...arg) {
   delete target.bindThis
 }
 
-Function.prototype.newApply = function () {
+Function.prototype.newApply = function (...arg) {
   let target = arg[0]
   if (!target) {
     if (typeof window !== 'undefined') {
