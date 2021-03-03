@@ -8,5 +8,5 @@ const b = a
 console.log('------>', mapDate)
 
 console.log('------>', mapDate.get(a) === mapDate.get(b))
-console.log('------>', mapDate.keys())
+console.log('------>', mapDate.keys()) 
 console.log('------>', [...mapDate])

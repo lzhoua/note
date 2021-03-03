@@ -8,29 +8,18 @@
 <body>
 <script>
 
-function Page (obj) {
-  return obj
-}
-
-Page = function () {
-  const target = arguments[0]
-  const current = new Proxy(target, {
-    get (target, key) {
-      console.log('------>', 12312312312312312)
-      return target[key]
+  const obj = {
+    name: {
+      age: this.name
     }
-  })
-  return target
-}
-
-const a = Page({
-  say () {
-    console.log('------>', 111111)
   }
-})
-setTimeout(() => {
-  a.say()
-}, 3000);
+  function deepCopy (target) {
+    let arr = []
+    let newTarget = undefined
+    while () {
+
+    }
+  }
 </script>
 </body>
 </html>
